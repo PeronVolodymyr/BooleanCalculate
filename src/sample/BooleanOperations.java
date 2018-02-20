@@ -1,5 +1,7 @@
 package sample;
 
+import java.util.logging.Logger;
+
 /**
  * Created by Volodymyr on 15.11.2017.
  */
@@ -8,6 +10,8 @@ public class BooleanOperations {
     private String operation;
     private String secondOperand;
     private String rezult;
+
+    private static  final Logger log = Logger.getLogger(BooleanOperations.class.getName());
 
     public BooleanOperations() {
         this.firstOperand = "";
@@ -62,6 +66,7 @@ public class BooleanOperations {
             this.rezult = "TRUE";
         else
             this.rezult = "NULL";
+        log.info("Conjunction performed");
     }
 
     public void disjunction() {
@@ -71,22 +76,27 @@ public class BooleanOperations {
             this.rezult = "FALSE";
         else
             this.rezult = "NULL";
+        log.info("Disjuction performed");
     }
 
     public void constTrue() {
         this.rezult = "TRUE";
+        log.info("Const True performed");
     }
 
     public void constFalse() {
         this.rezult = "FALSE";
+        log.info("Const False performed");
     }
 
     public void repeatFirstOperand() {
         this.rezult = this.getFirstOperand();
+        log.info("Repeat first operand performed");
     }
 
     public void repeatSecondOperand() {
         this.rezult = this.getSecondOperand();
+        log.info("repeat Second operand performed");
     }
 
     public void denialFirstOperand() {
@@ -96,6 +106,7 @@ public class BooleanOperations {
             this.rezult = "TRUE";
         else
             this.rezult = "NULL";
+        log.info("Denial First Operand performed");
     }
 
     @Override
@@ -115,6 +126,7 @@ public class BooleanOperations {
             this.rezult = "TRUE";
         else
             this.rezult = "NULL";
+        log.info("Denial Second Operand performed");
     }
 
     public void equivalence() {
@@ -124,6 +136,7 @@ public class BooleanOperations {
             this.rezult = "TRUE";
         else
             this.rezult = "FALSE";
+        log.info("Equivalence performed");
     }
 
     public void implication(){
@@ -133,6 +146,7 @@ public class BooleanOperations {
             this.rezult = "TRUE";
         else
             this.rezult = "NULL";
+        log.info("Implication performed");
     }
 
     public void arrowPier(){
@@ -142,6 +156,7 @@ public class BooleanOperations {
             this.rezult = "TRUE";
         else
             this.rezult = "NULL";
+        log.info("Arrow Pier performed");
     }
 
     public void barcodeScheffer() {
@@ -151,6 +166,7 @@ public class BooleanOperations {
             this.rezult = "FALSE";
         else
             this.rezult = "NULL";
+        log.info("Barcode Scheffer performed");
     }
 
     public void reverseImplication() {
@@ -160,6 +176,7 @@ public class BooleanOperations {
             this.rezult = "TRUE";
         else
             this.rezult = "NULL";
+        log.info("Reverse Implication performed");
     }
 
     public void addTwoModules() {
@@ -169,6 +186,7 @@ public class BooleanOperations {
             this.rezult = "FALSE";
         else
             this.rezult = "TRUE";
+        log.info("Add Two Modules performed");
     }
 
     public void denialReverseImplication() {
@@ -178,6 +196,8 @@ public class BooleanOperations {
             this.rezult = "FALSE";
         else
             this.rezult = "NULL";
+        log.info("Denial Reverse Implication performed");
+
     }
 
     public void denialImplication() {
@@ -187,6 +207,7 @@ public class BooleanOperations {
             this.rezult = "FALSE";
         else
             this.rezult = "NULL";
+        log.info("Denial Implication performed");
     }
 
 }

@@ -1,0 +1,82 @@
+.buttonValue {
+    -fx-background-color: rgb(70,70,70);
+    -fx-border-color: rgb(255,140,0);
+    -fx-border-radius: 20;
+    -fx-border-width: 2;
+    -fx-background-insets: 0 0 -1 0,0,1;
+    -fx-background-radius: 20;
+    -fx-padding: 0;
+    -fx-text-fill: white;
+    -fx-font-size: 15px;
+    -fx-font-style: normal;
+    -fx-animated: true;
+}
+
+.buttonValue:hover {
+    -fx-background-color: rgb(90,90,90);
+    -fx-border-color: orange;
+    -fx-border-radius: 25;
+    -fx-border-width: 2;
+    -fx-background-insets: 0 0 -1 0,0,1;
+    -fx-background-radius: 20;
+    -fx-padding: 0;
+    -fx-text-fill: white;
+    -fx-font-size: 18px;
+    -fx-font-style: normal;
+    -fx-animated: true;
+}
+
+.buttonDeleteAndEquals {
+     -fx-background-color: rgb(255,140,0);
+     -fx-border-color: rgb(255,140,0);
+     -fx-border-radius: 20;
+     -fx-border-width: 2;
+      -fx-background-insets: 0 0 -1 0,0,1;
+      -fx-background-radius: 20;
+      -fx-padding: 0;
+      -fx-text-fill: white;
+      -fx-font-size: 15px;
+      -fx-font-style: normal;
+      -fx-animated: true;
+}
+.buttonDeleteAndEquals:hover {
+     -fx-background-color: orange;
+     -fx-border-color: orange;
+     -fx-border-radius: 25;
+     -fx-border-width: 2;
+      -fx-background-insets: 0 0 -1 0,0,1;
+      -fx-background-radius: 20;
+      -fx-padding: 0;
+      -fx-text-fill: white;
+      -fx-font-size: 18px;
+      -fx-font-style: normal;
+      -fx-animated: true;
+}
+
+.buttonOperation{
+    -fx-background-color: rgb(114,112,112);
+    -fx-border-color: rgb(255,140,0);
+    -fx-border-radius: 20;
+    -fx-border-width: 2;
+    -fx-background-insets: 0 0 -1 0,0,1;
+    -fx-background-radius: 20;
+    -fx-padding: 0;
+    -fx-text-fill: white;
+    -fx-font-size: 15px;
+    -fx-font-style: normal;
+    -fx-animated: true;
+}
+
+.buttonOperation:hover{
+    -fx-background-color: rgb(132,132,132);
+    -fx-border-color: orange;
+    -fx-border-radius: 25;
+    -fx-border-width: 2;
+    -fx-background-insets: 0 0 -1 0,0,1;
+    -fx-background-radius: 20;
+    -fx-padding: 0;
+    -fx-text-fill: white;
+    -fx-font-size: 18px;
+    -fx-font-style: normal;
+    -fx-animated: true;
+}

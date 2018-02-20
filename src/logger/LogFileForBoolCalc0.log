@@ -1,0 +1,110 @@
+лют. 20, 2018 12:10:18 AM javafx.fxml.FXMLLoader$ValueElement processValue
+WARNING: Loading FXML document with JavaFX API of version 9.0.1 by JavaFX runtime of version 8.0.151
+лют. 20, 2018 12:10:19 AM sample.Controller initialize
+INFO: Set initial values
+лют. 20, 2018 12:10:19 AM sample.Main start
+INFO: Load sample.fxml
+лют. 20, 2018 12:10:19 AM sample.Main start
+INFO: Set with and height of the scene 
+лют. 20, 2018 12:10:19 AM sample.Main start
+INFO: Set Resizable of the window
+лют. 20, 2018 12:10:19 AM sample.Main start
+INFO: Set title of the window
+лют. 20, 2018 12:10:19 AM sample.Main start
+INFO: Load the icon of the window
+лют. 20, 2018 12:10:21 AM sample.Main start
+INFO: Show the window
+лют. 20, 2018 12:10:22 AM sample.Controller onClickBtnTrue
+INFO: Click 'True'
+лют. 20, 2018 12:10:22 AM sample.Controller initializeOperands
+INFO: Set first operand
+лют. 20, 2018 12:10:25 AM sample.Controller onClickBtnRepeatSecond
+INFO: Click 'Repeat sc.'
+лют. 20, 2018 12:10:25 AM sample.Controller initializeOperations
+INFO: Set operation
+лют. 20, 2018 12:10:26 AM sample.Controller onClickBtnFalse
+INFO: Click 'False'
+лют. 20, 2018 12:10:26 AM sample.Controller initializeOperands
+INFO: Set second operand
+лют. 20, 2018 12:10:30 AM sample.Controller onClickBtnEquals
+INFO: Click '='
+лют. 20, 2018 12:10:30 AM sample.BooleanOperations repeatSecondOperand
+INFO: repeat Second operand performed
+лют. 20, 2018 12:10:30 AM sample.Controller onClickBtnEquals
+INFO: Output rezult
+лют. 20, 2018 12:10:30 AM sample.Controller onClickBtnEquals
+INFO: Add the operation in the history list
+лют. 20, 2018 12:10:33 AM sample.Controller onClickBtnC
+INFO: Click 'C'
+лют. 20, 2018 12:10:33 AM sample.Controller onClickBtnC
+INFO: Clear object
+лют. 20, 2018 12:10:33 AM sample.Controller onClickBtnC
+INFO: Clear field
+лют. 20, 2018 12:10:34 AM sample.Controller onClickBtnRepeatSecond
+INFO: Click 'Repeat sc.'
+лют. 20, 2018 12:10:36 AM sample.Controller onClickBtnBarcodeScheffer
+INFO: Click '|'
+лют. 20, 2018 12:10:38 AM sample.Controller onClickBtnConstFalse
+INFO: Click 'Const 0'
+лют. 20, 2018 12:10:40 AM sample.Controller onClickBtnRepeatSecond
+INFO: Click 'Repeat sc.'
+лют. 20, 2018 12:10:41 AM sample.Controller onClickBtnRepeatSecond
+INFO: Click 'Repeat sc.'
+лют. 20, 2018 12:10:41 AM sample.Controller onClickBtnRepeatFirst
+INFO: Click 'Repeat ft.'
+лют. 20, 2018 12:10:42 AM sample.Controller onClickBtnRepeatSecond
+INFO: Click 'Repeat sc.'
+лют. 20, 2018 12:10:43 AM sample.Controller onClickBtnDenialFirst
+INFO: Click '!first'
+лют. 20, 2018 12:10:43 AM sample.Controller onClickBtnDenialSecond
+INFO: Click '!second'
+лют. 20, 2018 12:10:44 AM sample.Controller onClickBtnEquals
+INFO: Click '='
+лют. 20, 2018 12:10:46 AM sample.Controller onClickBtnC
+INFO: Click 'C'
+лют. 20, 2018 12:10:46 AM sample.Controller onClickBtnC
+INFO: Clear object
+лют. 20, 2018 12:10:46 AM sample.Controller onClickBtnC
+INFO: Clear field
+лют. 20, 2018 12:10:47 AM sample.Controller onClickBtnTrue
+INFO: Click 'True'
+лют. 20, 2018 12:10:47 AM sample.Controller initializeOperands
+INFO: Set first operand
+лют. 20, 2018 12:10:50 AM sample.Controller onClickBtnC
+INFO: Click 'C'
+лют. 20, 2018 12:10:50 AM sample.Controller onClickBtnC
+INFO: Clear object
+лют. 20, 2018 12:10:50 AM sample.Controller onClickBtnC
+INFO: Clear field
+лют. 20, 2018 12:10:51 AM sample.Controller onClickBtnImplication
+INFO: Click '→'
+лют. 20, 2018 12:10:51 AM sample.Controller onClickBtnTrue
+INFO: Click 'True'
+лют. 20, 2018 12:10:51 AM sample.Controller initializeOperands
+INFO: Set first operand
+лют. 20, 2018 12:10:53 AM sample.Controller onClickBtnConstTrue
+INFO: Click 'Const 1'
+лют. 20, 2018 12:10:53 AM sample.Controller initializeOperations
+INFO: Set operation
+лют. 20, 2018 12:10:54 AM sample.Controller onClickBtnRepeatFirst
+INFO: Click 'Repeat ft.'
+лют. 20, 2018 12:10:54 AM sample.Controller initializeOperations
+INFO: Set operation
+лют. 20, 2018 12:10:55 AM sample.Controller onClickBtnFalse
+INFO: Click 'False'
+лют. 20, 2018 12:10:55 AM sample.Controller initializeOperands
+INFO: Set second operand
+лют. 20, 2018 12:10:58 AM sample.Controller onClickBtnEquals
+INFO: Click '='
+лют. 20, 2018 12:10:58 AM sample.BooleanOperations repeatFirstOperand
+INFO: Repeat first operand performed
+лют. 20, 2018 12:10:58 AM sample.Controller onClickBtnEquals
+INFO: Output rezult
+лют. 20, 2018 12:10:58 AM sample.Controller onClickBtnEquals
+INFO: Add the operation in the history list
+лют. 20, 2018 12:11:01 AM sample.Controller onClickBtnC
+INFO: Click 'C'
+лют. 20, 2018 12:11:01 AM sample.Controller onClickBtnC
+INFO: Clear object
+лют. 20, 2018 12:11:01 AM sample.Controller onClickBtnC
+INFO: Clear field

@@ -9,10 +9,15 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.text.TextAlignment;
 
+import java.io.IOException;
+import java.util.logging.*;
+
 public class Controller {
 
-    ObservableList<BooleanOperations> historyList = FXCollections.observableArrayList();
+    Logger log = Logger.getLogger(Controller.class.getName());
 
+    //list for history of operations
+    ObservableList<BooleanOperations> historyList = FXCollections.observableArrayList();
     BooleanOperations obj = new BooleanOperations();
 
     void initializeOperands(String valueOfOperand)
@@ -23,20 +28,24 @@ public class Controller {
             obj.setSecondOperand("");
             obj.setOperation("");
             obj.setRezult("");
+            log.info("Clear object");
             labelFirstOperand.setText(obj.getFirstOperand());
             labelSecondOperand.setText(obj.getSecondOperand());
             labelOperation.setText(obj.getOperation());
             labelRezult.setText(obj.getRezult());
             labelEquals.setText("");
+            log.info("Clear field");
         }
         if(obj.getOperation() == "") {
             obj.setFirstOperand(valueOfOperand);
             labelFirstOperand.setText(valueOfOperand);
+            log.info("Set first operand");
         }
         else if(obj.getRezult() == "")
         {
             obj.setSecondOperand(valueOfOperand);
             labelSecondOperand.setText(valueOfOperand);
+            log.info("Set second operand");
         }
     }
 
@@ -46,6 +55,7 @@ public class Controller {
         {
             obj.setOperation(valueOfOperation);
             labelOperation.setText(obj.getOperation());
+            log.info("Set operation");
         }
     }
 
@@ -129,114 +139,137 @@ public class Controller {
 
     @FXML
     void onClickBtnC(ActionEvent event) {
+        log.info("Click 'C'");
         obj.setFirstOperand("");
         obj.setSecondOperand("");
         obj.setOperation("");
         obj.setRezult("");
+        log.info("Clear object");
         labelFirstOperand.setText(obj.getFirstOperand());
         labelSecondOperand.setText(obj.getSecondOperand());
         labelOperation.setText(obj.getOperation());
         labelRezult.setText(obj.getRezult());
         labelEquals.setText("");
+        log.info("Clear field");
     }
 
     @FXML
     void onClickBtnFalse(ActionEvent event) {
+        log.info("Click 'False'");
         initializeOperands("FALSE");
     }
 
     @FXML
     void onClickBtnNull(ActionEvent event) {
+        log.info("Click 'Null'");
         initializeOperands("NULL");
     }
 
     @FXML
     void onClickBtnTrue(ActionEvent event) {
+        log.info("Click 'True'");
         initializeOperands("TRUE");
     }
 
     @FXML
     void onClickBtnAddTwoModules(ActionEvent event) {
+        log.info("Click '(+)'");
         initializeOperations("(+)");
     }
 
     @FXML
     void onClickBtnArrowPier(ActionEvent event) {
+        log.info("Click '↓'");
         initializeOperations("↓");
     }
 
     @FXML
     void onClickBtnBarcodeScheffer(ActionEvent event) {
+        log.info("Click '|'");
         initializeOperations("|");
     }
 
     @FXML
     void onClickBtnConjunction(ActionEvent event) {
+        log.info("Click '˄'");
         initializeOperations("˄");
     }
 
     @FXML
     void onClickBtnConstFalse(ActionEvent event) {
+        log.info("Click 'Const 0'");
         initializeOperations("(Const 0)");
     }
 
     @FXML
     void onClickBtnConstTrue(ActionEvent event) {
+        log.info("Click 'Const 1'");
         initializeOperations("(Const 1)");
     }
 
     @FXML
     void onClickBtnDenialFirst(ActionEvent event) {
+        log.info("Click '!first'");
         initializeOperations("(!first)");
     }
 
     @FXML
     void onClickBtnDenialImplication(ActionEvent event) {
+        log.info("Click '!→'");
         initializeOperations("!→");
     }
 
     @FXML
     void onClickBtnDenialReverseImplication(ActionEvent event) {
+        log.info("Click '!←'");
         initializeOperations("!←");
     }
 
     @FXML
     void onClickBtnDenialSecond(ActionEvent event) {
+        log.info("Click '!second'");
         initializeOperations("(!second)");
     }
 
     @FXML
     void onClickBtnDisjunction(ActionEvent event) {
+        log.info("Click '˅'");
         initializeOperations("˅");
     }
 
     @FXML
     void onClickBtnEquivalence(ActionEvent event) {
+        log.info("Click '~'");
         initializeOperations("~");
     }
 
     @FXML
     void onClickBtnImplication(ActionEvent event) {
+        log.info("Click '→'");
         initializeOperations("→");
     }
 
     @FXML
     void onClickBtnRepeatFirst(ActionEvent event) {
+        log.info("Click 'Repeat ft.'");
         initializeOperations("(Repeat fr.)");
     }
 
     @FXML
     void onClickBtnRepeatSecond(ActionEvent event) {
+        log.info("Click 'Repeat sc.'");
         initializeOperations("(Repeat sc.)");
     }
 
     @FXML
     void onClickBtnReverseImplication(ActionEvent event) {
+        log.info("Click '←'");
         initializeOperations("←");
     }
 
     @FXML
     void onClickBtnEquals(ActionEvent event) {
+        log.info("Click '='");
         if(obj.getSecondOperand() != "") {
             labelEquals.setText("=");
             switch (obj.getOperation()) {
@@ -290,7 +323,9 @@ public class Controller {
                     break;
             }
             labelRezult.setText(obj.getRezult());
+            log.info("Output rezult");
             historyList.add(obj);
+            log.info("Add the operation in the history list");
             System.out.println(obj);
         }
 
@@ -305,6 +340,7 @@ public class Controller {
         labelRezult.setText("");
         labelEquals.setText("");
         labelOperation.setAlignment(Pos.CENTER);
+        log.info("Set initial values");
     }
 
 }
